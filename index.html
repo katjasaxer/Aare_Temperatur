@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>KatjAAREliane</title>
+</head>
+<body>
+<main>
+<section class= "titel" >
+        <p>Welli Temperatur hed</p>
+</section>
+
+<section class="inhalte">
+    <section class="hauptbox">
+            
+        <div class="h2_aarehöt">
+            <h2>Aare höt</h2>
+        </div>
+        <div class="h3_in">   
+            <h3>in</h3>
+        </div>
+        
+        <!-- Stadt-Auswahl
+            <div class="button-container">
+            <button class="städte-button-bern">Bern</button>
+            <button class="städte-button-thun">Thun</button>
+            </div> -->
+        
+        <!-- Stadt-Auswahl -->
+        <div class="button-container">
+            <button class="bern-button staedte-button" id="buttonBern">Bern</button>
+            <button class="thun-button staedte-button" id="buttonThun">Thun</button>
+        </div>
+    
+    <!-- Temperatur-Auswahl -->
+        <div class="button-container">
+            <button class="icon-container-wasser" data-type="type" id="waterTemp" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;">
+                <img src= "images/Wasser_icon_hell.png" alt="Wasser_icon" class="icon-container-wasser">
+            </button>
+            <button class="icon-container-luft" data-type="type" id="airTemp" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;">
+                <img src="images/Luft_icon_ausgwählt.png" alt="Luft_icon" class="icon-container-luft"> 
+            </button>
+        </div>
+    </section>
+    <section class="temperaturanzeige">
+        <p><span id="temperaturanzeige"><div id="output" class="output-box"></div></span> °C</p>
+    </section>
+
+    <section class="thermometer">
+        <span id="thermometer_icon">-</span>
+    </section>
+</section>
+
+<section class="hintergrund_wellen"></section>
+
+<script src="script.js" type="module"></script>
+
+</body>
+</html>
+

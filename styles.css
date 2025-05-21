@@ -1,0 +1,175 @@
+:root {
+    --dunkelblau: rgba(1, 64, 121, 1);
+    --hellblau: rgba(234, 243, 255, 1);
+    --mittelblau: rgba(46, 139, 223, 1);
+  }
+  
+  body {
+    background-color: var(--hellblau);
+    font-family: brevia bold;
+    color: var(--dunkelblau);
+    display: flex;
+    width: 100%;
+  }
+  .titel {
+    font-size: 65px;
+    font-family: brevia black;
+    display: flex;
+    justify-content: center; /* Horizontale Zentrierung */
+  
+  }
+  .h2_aarehöt {
+    font-size: 35px;
+    font-family: brevia black;
+  }
+  .h3_in {
+    font-size: 25px;
+    font-family: brevia black;
+    margin-bottom: 3%;
+  }
+  
+  h2, h3 {
+    margin: 0;
+    padding: 50;
+  }
+  
+  .inhalte {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;         /* nimmt volle Breite des Viewports */
+    box-sizing: border-box;
+  }
+  .temperaturanzeige {
+    font-size: 65px;
+    font-family: brevia black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .thermometer {
+    font-size: 65px;
+    font-family: brevia black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hauptbox {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 80px;
+    background-color: white;
+  
+    /* Inhalt zentrieren */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .button-container {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 10px;
+  }
+  
+  .bern-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: brevia bold;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--mittelblau);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .thun-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: brevia bold;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--mittelblau);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .button-aktiv {
+    color: white;
+  }
+  
+  .temps-button {
+    display: flexbox;
+    justify-content: center;
+    position:fixed ;
+    top: 0;
+    width: 576px;
+    font-family: brevia black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #3399ff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .icon-container-wasser {
+    display: flex;
+    gap: 50px;
+    align-items: center;  /* Optional: vertikal zentrieren */
+    width: 100px;
+    height: 100px;
+    margin-right: 8px;
+    vertical-align: middle;
+    }
+  
+    .icon-container-luft {
+      display: flex;
+      gap: 50px;
+      align-items: center;  /* Optional: vertikal zentrieren */
+      width: 100px;
+      height: 100px;
+      margin-right: 8px;
+      vertical-align: middle;
+      }
+  
+    .icon-container {
+      display: flex;
+      gap: 50px;
+      margin-bottom: 10px;
+    }
+    
+  .hintergrund_wellen {
+    background-image: url('images/wellen_ohneHintergrund.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;     /* darf verzerren */
+    background-position: bottom;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33vh;
+    z-index: -1; /* oder höher, wenn es über anderem Inhalt liegen soll */
+  }
+  
+  .output-box {
+    background-color: #eef;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 300px;
+    color: #003366;
+  }
+  
+  
+  
