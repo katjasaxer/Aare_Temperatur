@@ -41,7 +41,6 @@ async function checkAndFetch() {
   if (!selectedCity || !selectedType) return;
 
   const output = document.getElementById("output");
-  output.innerText = "Lade...";
 
   const data = await fetchAareData(selectedCity);
   if (!data) {
@@ -57,57 +56,13 @@ async function checkAndFetch() {
   }
 
   output.innerHTML = value;
+  setTemperature(value);
 }
+
 //Thermometer ab hier
 
-const units = {
-	Celcius: "°C",
-};
-
-const config = {
-	minTemp: -10,
-	maxTemp: 40,
-	unit: "Celcius"
-};
-
-// Change min and max temperature values
-
-const tempValueInputs = document.querySelectorAll("input[type='text']");
-
-tempValueInputs.forEach((input) => {
-	input.addEventListener("change", (event) => {
-		const newValue = event.target.value;
-		
-		if(isNaN(newValue)) {
-			return input.value = config[input.id];
-		} else {
-			config[input.id] = input.value;
-			range[input.id.slice(0, 3)] = config[input.id]; // Update range
-			return setTemperature(); // Update temperature
-		}
-	});
-});
-
-// Switch unit of temperature
-
-const unitP = document.getElementById("unit");
-
-unitP.addEventListener("click", () => {
-	config.unit = config.unit === "Celcius" ? "Fahrenheit" : "Celcius";
-	unitP.innerHTML = config.unit + ' ' + units[config.unit];
-	return setTemperature();
-})
-
-// Change temperature
-
-const range = document.querySelector("input[type='range']");
 const temperature = document.getElementById("temperature");
 
-function setTemperature() {
-	temperature.style.height = (range.value - config.minTemp) / (config.maxTemp - config.minTemp) * 100 + "%";
-	temperature.dataset.value = range.value + units[config.unit];
+function setTemperature(temp) {
+	temperature.style.height = (temp - -10) / (40 - -10) * 100 + "%";
 }
-
-range.addEventListener("input", setTemperature);
-setTimeout(setTemperature, 1000);
-
