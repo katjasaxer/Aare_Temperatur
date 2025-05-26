@@ -249,7 +249,7 @@ p {
 	background: linear-gradient(#f17a65, var(--mittelblau)) no-repeat bottom;
 	width: 100%;
 	border-radius: 16px;
-	background-size: 100% 240px;
+	background-size: 100% 175px;
 	transition: all 0.2s ease-in-out;
 	position: absolute;
 }

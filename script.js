@@ -11,6 +11,12 @@ async function fetchAareData(city) {
     }
   }
 
+document.addEventListener("DOMContentLoaded", function() {
+  checkAndFetch();
+  selectBernTemp();
+  selectAirTemp();
+});
+  
 let selectedCity = null;
 let selectedType = null;
 
@@ -71,8 +77,10 @@ function selectType(type) {
 
 // Prüfen, ob beide ausgewählt, und dann Daten laden
 async function checkAndFetch() {
-  if (!selectedCity || !selectedType) return;
-
+  if (!selectedCity || !selectedType) {
+    selectedCity = "bern"
+    selectedType = "airTemp";
+  }
   const output = document.getElementById("output");
 
   const data = await fetchAareData(selectedCity);
