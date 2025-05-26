@@ -1,7 +1,7 @@
 :root {
     --dunkelblau: rgba(1, 64, 121, 1);
     --hellblau: rgba(234, 243, 255, 1);
-    --mittelblau: rgba(46, 139, 223, 1);
+    --mittelblau: rgba(31, 117, 194, 1);
   }
   
   body {
@@ -80,33 +80,31 @@
   gap: 50px;
   margin-bottom: 10px;
   }
-  
+  .button_city_img {
+    height: 40px;
+  }
+
   .bern-button {
-    padding: 10px 20px;
     font-size: 20px;
     font-family: brevia bold;
     border: none;
     border-radius: 5px;
-    background-color: var(--mittelblau);
-    color: white;
+    color: var(--mittelblau);
+    background-color: white;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   .thun-button {
-    padding: 10px 20px;
     font-size: 20px;
     font-family: brevia bold;
     border: none;
     border-radius: 5px;
-    background-color: var(--mittelblau);
-    color: white;
+    background-color: white;
+    color: var(--mittelblau);
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  .button-aktiv {
-    color: white;
-  }
-  
+
   .temps-button {
     display: flexbox;
     justify-content: center;
@@ -172,14 +170,6 @@
   }
 
   @import url("https://fonts.googleapis.com/css?family=Jaldi&display=swap");
-
-body {
-	display: flex;
-	height: 100vh;
-	margin: 0;
-	font-family: "Jaldi", sans-serif;
-	font-size: 14px;
-}
 
 #wrapper {
 	margin: auto;
@@ -258,7 +248,7 @@ p {
 	bottom: 0;
 	background: linear-gradient(#f17a65, var(--mittelblau)) no-repeat bottom;
 	width: 100%;
-	border-radius: 20px;
+	border-radius: 16px;
 	background-size: 100% 240px;
 	transition: all 0.2s ease-in-out;
 	position: absolute;
@@ -282,12 +272,16 @@ p {
 	content: "";
 	border-top: calc(1em / 2.2) solid transparent;
 	border-bottom: calc(1em / 2.2) solid transparent;
-	border-right: calc(1em / 1.5) solid rgba(0, 0, 0, 0.7);
 	left: 100%;
 	top: calc(-1em / 2.2 + 5px);
 	position: absolute;
 }
   
-  
+ .dateAndtime {
+  color: rebeccapurple;
+  font-family: brevia;
+  font-size: 15px;
+ }
+
   
   

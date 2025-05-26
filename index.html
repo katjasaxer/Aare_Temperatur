@@ -31,22 +31,27 @@
         
         <!-- Stadt-Auswahl -->
         <div class="button-container">
-            <button class="bern-button staedte-button" id="buttonBern">Bern</button>
-            <button class="thun-button staedte-button" id="buttonThun">Thun</button>
+            <button class="bern-button staedte-button" id="buttonBern">                
+                <img src= "images/Bern_icon.png" id="buttonBernImg" class="button_city_img">
+            </button>
+            <button class="thun-button staedte-button" id="buttonThun">                
+                <img src= "images/Thun_icon.png" id="buttonThunImg" class="button_city_img">
+            </button>
         </div>
     
     <!-- Temperatur-Auswahl -->
         <div class="button-container">
             <button class="icon-container-wasser" data-type="type" id="waterTemp" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;">
-                <img src= "images/Wasser_icon_hell.png" alt="Wasser_icon" class="icon-container-wasser">
+                <img src= "images/Wasser_icon_hell.png" alt="Wasser_icon" class="icon-container-wasser" id="waterTempImg">
             </button>
             <button class="icon-container-luft" data-type="type" id="airTemp" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;">
-                <img src="images/Luft_icon_ausgwählt.png" alt="Luft_icon" class="icon-container-luft"> 
+                <img src="images/Luft_icon_hell.png" alt="Luft_icon" class="icon-container-luft" id="airTempImg"> 
             </button>
         </div>
+        <div id="dateAndtime"></div>
     </section>
     <section class="temperaturanzeige">
-        <p><span id="temperaturanzeige"><div id="output" class="output-box"></div></span> °C</p>
+        <p><span id="temperaturanzeige"><div id="output" class="output-box"></div></span></p>
     </section>
 
     <div id="wrapper">	
@@ -55,6 +60,8 @@
             <div id="graduations"></div>
         </div>
     </div>
+
+    
 </section>
 
 <section class="hintergrund_wellen"></section>
