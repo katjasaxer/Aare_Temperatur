@@ -23,7 +23,7 @@
   .h2_aarehöt.h3_in {
       font-family: brevia black;
   }
-.h2_aarehöt {
+  .h2_aarehöt {
   font-size: 35px;
 }
 
@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-evenly ;
     width: 100vw;         /* nimmt volle Breite des Viewports */
     box-sizing: border-box;
   }
@@ -52,6 +52,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left:-15%;
+    margin-right:-15%;
   }
   
   .hauptbox {
@@ -63,15 +65,16 @@
     /* Inhalt zentrieren */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center ;
     justify-content: center;
     text-align: center;
   }
   .button-container {
   display: flex;
   gap: 50px;
-  margin-bottom: 10px;
+  justify-content: space-evenly;
   }
+
   .button_city_img {
     height: 40px;
   }
@@ -117,7 +120,6 @@
   }
 
 #wrapper {
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,44 +205,39 @@
 
 #dateAndtime {
   color: var(--dunkelblau);
-  font-family: brevia;
-  font-size: 15px;
+  font-family: brevia medium;
+  font-size: 15px;
 }
 
 /* Responsive Anpassungen */
 
 /* Responsive Tablet: bis 1024px */
 @media (max-width: 1024px) {
+
   .titel {
     font-size: 55px;
   }
   .inhalte {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
   }
 
   .hauptbox {
-    width: 55%;
-    height: auto;
+    width: 350px;
+    height: 350px;
     padding: 30px;
   }
 
   .button-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
   }
-
-  .bern-button,
-  .thun-button {
-    width: 120px;
-    height: 120px;
-  }
-
+  #button-container-icons {
+    margin-bottom: 15px;
+    }
   .temperaturanzeige {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   #dateAndtime {
@@ -283,24 +280,20 @@
   }
 
   .hauptbox {
-    width: 65%;
-    padding: 20px;
+    width: 330px;
+    height: 330px;
+    padding: 10px;
   }
 
   .button-container {
     flex-direction: row;
     align-items: center;
-    gap: 15px;
-  }
-
-  .bern-button,
-  .thun-button {
-    width: 100px;
-    height: 100px;
+    column-gap: 15px;
+    justify-content: space-evenly;
   }
 
   .temperaturanzeige {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   #dateAndtime {
