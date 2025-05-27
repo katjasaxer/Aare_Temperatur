@@ -5,44 +5,22 @@
     --mittelblau: rgba(31, 117, 194, 1);
   }
   
-/*Font */
-   /*Font Brevia Black */
-  @font-face {
-    font-family: 'Brevia Black';
-    src: url('font/HvDTrial_Brevia-Black.woff2') format('woff2'),
-         url('font/HvDTrial_Brevia-Black.woff') format('woff');
-    font-display: swap;
-  }
-   /*Font Brevia Bold */
-  @font-face {
-    font-family: 'Brevia Bold';
-    src: url('font/HvDTrial_Brevia-Bold.woff2') format('woff2'),
-         url('font/HvDTrial_Brevia-Bold.woff') format('woff');
-    font-display: swap;
-  }
-  /*Font Brevia Semibold */
-  @font-face {
-    font-family: 'Brevia Semibold';
-    src: url('font/HvDTrial_Brevia-SemiBold.woff2') format('woff2'),
-         url('font/HvDTrial_Brevia-SemiBold.woff') format('woff');
-    font-display: swap;
-  }
-
+  /*basics*/
   body {
     background-color: var(--hellblau);
-    font-family: brevia bold;
+    font-family: 'Sour Gummy';
     color: var(--dunkelblau);
     display: flex;
     width: 100%;
   }
   .titel {
     font-size: 65px;
-    font-family: brevia black;
+    font-family: 'Sour Gummy';
     display: flex;
     justify-content: center;
   }
   .h2_aarehöt.h3_in {
-      font-family: brevia black;
+    font-family: 'Sour Gummy';
   }
   .h2_aarehöt {
   font-size: 35px;
@@ -86,7 +64,7 @@
 /*Temperaturanzeige 1.0 / Thermometer*/
   .temperaturanzeige {
     font-size: 80px;
-    font-family: brevia black;
+    font-family: 'Sour Gummy';
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,7 +97,7 @@
 /*Datumanzeige*/
     #dateAndtime {
       color: var(--dunkelblau);
-      font-family: brevia semibold;
+      font-family: 'Sour Gummy';
       font-size: 15px;
       margin-top: 15px;
     }
@@ -195,7 +173,7 @@
   }
   .bern-button, .thun-button {
     font-size: 20px;
-    font-family: brevia bold;
+    font-family: 'Sour Gummy';
     border: none;
     border-radius: 5px;
     color: var(--mittelblau);
