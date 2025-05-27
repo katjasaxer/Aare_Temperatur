@@ -1,11 +1,11 @@
-/*Grundfarben*/
+/*Grundfarben---------------------------------*/
 :root {
     --dunkelblau: rgba(1, 64, 121, 1);
     --hellblau: rgba(234, 243, 255, 1);
     --mittelblau: rgba(31, 117, 194, 1);
   }
   
-  /*basics*/
+  /*basics------------------------------------*/
   body {
     background-color: var(--hellblau);
     font-family: 'Sour Gummy';
@@ -34,7 +34,7 @@
     margin: 0;
   }
 
-/*Struktur und Layout */
+/*Struktur und Layout-------------------------*/
   .inhalte {
     display: flex;
     flex-direction: row;
@@ -61,7 +61,7 @@
     align-items: center;
   }
 
-/*Temperaturanzeige 1.0 / Thermometer*/
+/*Temperaturanzeige 1.0 / Thermometer---------*/
   .temperaturanzeige {
     font-size: 80px;
     font-family: 'Sour Gummy';
@@ -85,7 +85,7 @@
     margin-bottom: 60px;
   }
 
-/*Temperaturanzeige 2.0*/
+/*Temperaturanzeige 2.0-----------------------*/
     .output-box {
       padding: 15px;
       border-radius: 10px;
@@ -94,7 +94,7 @@
       color: #003366;
     }
 
-/*Datumanzeige*/
+/*Datumanzeige--------------------------------*/
     #dateAndtime {
       color: var(--dunkelblau);
       font-family: 'Sour Gummy';
@@ -102,7 +102,7 @@
       margin-top: 15px;
     }
 
-/*Untere Kugel vom Thermometer */
+/*Untere Kugel vom Thermometer----------------*/
 #termometer:after {
   content: "";
   position: absolute;
@@ -117,7 +117,7 @@
   border-radius: 50%;
 }
 
-/*Gradstriche (Graduierungen) im Thermometer */
+/*Gradstriche (Graduierungen) im Thermometer--*/
 #graduations {
   height: 59%;
   top: 20%;
@@ -136,7 +136,7 @@
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
-/* Farbe/Füllung im Thermometers */
+/*Farbe/Füllung im Thermometers---------------*/
 #temperature {
   bottom: 0;
   background: linear-gradient(#f17a65, var(--mittelblau)) no-repeat bottom;
@@ -147,7 +147,7 @@
   position: absolute;
 }
 
-/* Temperaturwertanzeige (Textanzeige oben am Füllstand) */
+/*Temperaturwertanzeige-----------------------*/
 #temperature:before {
   content: attr(data-value);
   color: white;
@@ -162,7 +162,7 @@
   position: absolute;
 }
 
-/*Buttons und Icons*/
+/*Buttons und Icons---------------------------*/
   .button-container {
   display: flex;
   gap: 30px;
@@ -193,7 +193,7 @@
     margin-left: 1px;
   }
   
-/*Wellen im Hintergrund*/
+/*Wellen im Hintergrund-----------------------*/
 .hintergrund_wellen {
   background-image: url('images/wellen_ohneHintergrund.png');
   background-repeat: no-repeat;
@@ -207,7 +207,7 @@
   z-index: -1;
 }
 
-/* Responsive Tablet: bis 1024px */
+/*Responsive Tablet: bis 1024px---------------*/
 @media (max-width: 1024px) {
 
   .titel {
@@ -273,7 +273,7 @@
   }
 }
 
-/* Responsive Mobile: bis 768px */
+/*Responsive Mobile: bis 768px----------------*/
 @media (max-width: 768px) {
   .inhalte {
     flex-direction: column;
