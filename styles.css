@@ -4,29 +4,42 @@
     --hellblau: rgba(234, 243, 255, 1);
     --mittelblau: rgba(31, 117, 194, 1);
   }
-  
+
+/*Font/Schrift--------------------------------*/
+@font-face {
+  font-family: 'Mitr-Bold';
+  src: url('font/Mitr-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Mitr-SemiBold';
+    src: url('font/Mitr-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Mitr-Regular';
+    src: url('font/Mitr-Regular.ttf') format('truetype');
+  }
+
   /*basics------------------------------------*/
   body {
     background-color: var(--hellblau);
-    font-family: 'Sour Gummy';
     color: var(--dunkelblau);
     display: flex;
     width: 100%;
   }
   .titel {
     font-size: 65px;
-    font-family: 'Sour Gummy';
+    font-family: 'Mitr-SemiBold' ;
     display: flex;
     justify-content: center;
   }
-  .h2_aarehöt.h3_in {
-    font-family: 'Sour Gummy';
-  }
   .h2_aarehöt {
   font-size: 35px;
+  font-family: 'Mitr-Bold' ;
+
   }
   .h3_in {
     font-size: 25px;
+    font-family: 'Mitr-SemiBold' ;
     margin-bottom: 3%;
   }
 
@@ -64,7 +77,7 @@
 /*Temperaturanzeige 1.0 / Thermometer---------*/
   .temperaturanzeige {
     font-size: 80px;
-    font-family: 'Sour Gummy';
+    font-family: 'Mitr-SemiBold';
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -97,7 +110,7 @@
 /*Datumanzeige--------------------------------*/
     #dateAndtime {
       color: var(--dunkelblau);
-      font-family: 'Sour Gummy';
+      font-family: 'Mitr-Regular';
       font-size: 15px;
       margin-top: 15px;
     }
@@ -173,7 +186,7 @@
   }
   .bern-button, .thun-button {
     font-size: 20px;
-    font-family: 'Sour Gummy';
+    font-family: 'Mitr-Semibold';
     border: none;
     border-radius: 5px;
     color: var(--mittelblau);

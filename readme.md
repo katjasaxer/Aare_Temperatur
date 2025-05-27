@@ -7,7 +7,7 @@ Learnings und Schwierigkeiten (max. 200 Zeichen pro Person)
 Katja:
 
 Eliane:
-Wie man mehrere Buttons mit Infos der API machen und mit dem HTML verknüpfen kann.
-Die 1. Schrift (aus dem Figma-Design), konnten wir aus Lizenzgründen nicht nutzen und mussten eine neue nehmen.
+- Wie man mehrere Buttons mit Infos der API machen und mit dem HTML verknüpfen kann.
+- Die 1. Schrift (aus dem Figma-Design), konnten wir aus Lizenzgründen nicht nutzen und mussten eine neue nehmen.
 
 benutzte Ressourcen und Prompts
