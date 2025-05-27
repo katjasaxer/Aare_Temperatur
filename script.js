@@ -1,3 +1,4 @@
+//Daten von API holen
 async function fetchAareData(city) {
     try {
         let url = `https://aareguru.existenz.ch/v2018/current?city=${city}`;
@@ -10,7 +11,8 @@ async function fetchAareData(city) {
       return [];
     }
   }
-// Wenn Seite ladet, ist automatisch Startauswahl Bern & Luft
+  
+// Wenn Seite ladet, ist automatisch Auswahl Bern & Lufttemperatur
 document.addEventListener("DOMContentLoaded", function() {
   checkAndFetch();
   selectBernTemp();
@@ -42,23 +44,25 @@ buttonThunState.addEventListener("click", selectThunTemp);
 buttonBernState.addEventListener("click", selectBernTemp);
 
 
-//Wenn Stadt angeklickt wird, Icon ändert
+//Wenn Bern angeklickt wird, ändert Icon
 function selectBernTemp() {
   buttonBernImg.src="images/Bern_icon_ausgewaehlt.png";
   buttonThunImg.src="images/Thun_icon.png";
 }
-  
+
+ //Wenn Thun angeklickt wird, ändert Icon
 function selectThunTemp() {
     buttonBernImg.src="images/Bern_icon.png";
     buttonThunImg.src="images/Thun_icon_ausgewaehlt.png";
 }
 
-// Wenn Lufttemperatur angeklickt wird, Icon ändert
+// Wenn Lufttemperatur angeklickt wird, ändert Icon
 function selectAirTemp() {
 airTempImg.src="images/Luft_icon_ausgewaehlt.png";
 waterTempImg.src="images/Wasser_icon_hell.png";
 }
-// Wenn Wassertemperatur angeklickt wird, Icon ändert
+
+// Wenn Wassertemperatur angeklickt wird, ändert Icon
 function selectWaterTemp() {
   airTempImg.src="images/Luft_icon_hell.png";
   waterTempImg.src="images/Wasser_icon_ausgewaehlt.png";
@@ -76,7 +80,7 @@ function selectType(type) {
   checkAndFetch();
 }
 
-// Prüfen, ob beide ausgewählt sind, und dann Daten laden
+// Überprüfen, ob beide ausgewählt sind, und dann Daten laden
 async function checkAndFetch() {
   if (!selectedCity || !selectedType) {
     selectedCity = "bern"
@@ -90,6 +94,7 @@ async function checkAndFetch() {
     return;
   }
 
+  // Temperatur auswählen & dann anzeigen
   let value;
   if (selectedType === 'waterTemp') {
     value = data.aare.temperature;
@@ -102,14 +107,15 @@ async function checkAndFetch() {
   setCurrentTime();
 }
 
-// Thermometer, dass Tempanzeige mit Thermometer gleich ist & max. Temp 40 und min. Temp -10 Grad
+// Thermometer, dass Tempanzeige mit Thermometer gleich ist
 const temperature = document.getElementById("temperature");
 
+// Thermometer max. Temp 40 und min. Temp -10 Grad
 function setTemperature(temp) {
 	temperature.style.height = (temp - -10) / (40 - -10) * 100 + "%";
 }
 
-// Letztes Update-Anzeige
+// Zeit von letztem Update anzeigen
 function setCurrentTime(){
 var currentdate = new Date(); 
 var datetime =  "Letztes Update: " +
