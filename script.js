@@ -10,7 +10,7 @@ async function fetchAareData(city) {
       return [];
     }
   }
-
+// Wenn Seite ladet, ist automatisch Startauswahl Bern & Luft
 document.addEventListener("DOMContentLoaded", function() {
   checkAndFetch();
   selectBernTemp();
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let selectedCity = null;
 let selectedType = null;
 
+//alle Buttonfunktionen
 const buttonBernState = document.getElementById("buttonBern");
 const buttonThunState = document.getElementById("buttonThun");
 const buttonWaterTempState = document.getElementById("waterTemp");
@@ -41,7 +42,7 @@ buttonThunState.addEventListener("click", selectThunTemp);
 buttonBernState.addEventListener("click", selectBernTemp);
 
 
-//when location gets clicked
+//Wenn Stadt angeklickt wird, Icon ändert
 function selectBernTemp() {
   buttonBernImg.src="images/Bern_icon_ausgewaehlt.png";
   buttonThunImg.src="images/Thun_icon.png";
@@ -52,12 +53,12 @@ function selectThunTemp() {
     buttonThunImg.src="images/Thun_icon_ausgewaehlt.png";
 }
 
-//when airTemp gets clicked
+// Wenn Lufttemperatur angeklickt wird, Icon ändert
 function selectAirTemp() {
 airTempImg.src="images/Luft_icon_ausgewaehlt.png";
 waterTempImg.src="images/Wasser_icon_hell.png";
 }
-
+// Wenn Wassertemperatur angeklickt wird, Icon ändert
 function selectWaterTemp() {
   airTempImg.src="images/Luft_icon_hell.png";
   waterTempImg.src="images/Wasser_icon_ausgewaehlt.png";
@@ -75,7 +76,7 @@ function selectType(type) {
   checkAndFetch();
 }
 
-// Prüfen, ob beide ausgewählt, und dann Daten laden
+// Prüfen, ob beide ausgewählt sind, und dann Daten laden
 async function checkAndFetch() {
   if (!selectedCity || !selectedType) {
     selectedCity = "bern"
@@ -101,15 +102,14 @@ async function checkAndFetch() {
   setCurrentTime();
 }
 
-//Thermometer ab hier
-
+// Thermometer, dass Tempanzeige mit Thermometer gleich ist & max. Temp 40 und min. Temp -10 Grad
 const temperature = document.getElementById("temperature");
 
 function setTemperature(temp) {
 	temperature.style.height = (temp - -10) / (40 - -10) * 100 + "%";
 }
 
-
+// Letztes Update-Anzeige
 function setCurrentTime(){
 var currentdate = new Date(); 
 var datetime =  "Letztes Update: " +
