@@ -4,13 +4,16 @@ Unsere interaktive Website zeigt die aktuelle Aare-Wassertemperatur in Bern und 
 Learnings: 
 Katja:
 - Die Verknüpfung mit einer API und einen Wert daraus ziehen 
-- Buttonfunktion, dass sich die Farben beim Klicken ändern 
 
 Eliane:
 - Wie man mehrere Buttons mit Infos der API machen und mit dem HTML verknüpfen kann.
-- Die 1. Schrift (aus dem Figma-Design), konnten wir aus Lizenzgründen nicht nutzen und mussten eine neue nehmen.
 
 Schwierigkeiten:
+Katja:
+- Buttonfunktion, dass sich die Farben beim Klicken ändern 
+
+Eliane:
+- Aus Lizenz- und Browsergründen musste eine neue Schrift hinzugefügt werden, da wir einige Schwierigkeiten hatten.
 
 benutzte Ressourcen und Prompts
 w3schools
