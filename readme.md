@@ -20,3 +20,7 @@ w3schools
 ChatGPT
 Prompts:
 - kannst du mir bitte einen Code für einen Thermometer für html css und js programmieren. Das Thermometer soll sich je nach ausgewählter Temperatur an die richtige Stelle bewegen und je nach Wärme die Farbe ändern.
+- Ich habe eine Seite mit HTML, CSS und JS programmiert/gecodet. Das HTML und JS läuft nun perfekt und da soll nichts geändert werden. Ich habe aber im CSS das Gefühl, dass sehr viel überflüssig ist nicht gebraucht wird oder doppelt steht. Kannst du mir das CSS aussäubern, damit nur noch alles relevante steht (das Design, wie es jetzt ist, soll unverändert bleiben! Kannst du das machen?
+Ich werde dir in der nächsten Nachricht die HTML, CSS und JS, Codes schicken.
+- kannst du mir den code schreiben, damit es responsive für desktop, tablet und mobile wird? tablet= max. 1024px mobile=max. 768px
+- kannst du mir vergleichbare von google fonts suchen, da wir ja brevia wegen der lizenz nicht brauchen können?
